@@ -1,4 +1,4 @@
-# section_4_Introduction to Algorithm and Golang
+# (4) Introduction to Algorithm and Golang
 
 ###################
 
