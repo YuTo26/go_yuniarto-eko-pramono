@@ -1,7 +1,5 @@
 # (5) Basic Programming
 
-###################
-
 *******************
 1.Introduction to Golang
 
