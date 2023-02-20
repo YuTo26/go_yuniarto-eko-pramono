@@ -1,4 +1,4 @@
-# (5) Basic Programming
+# (5) Version Control & Branch Management (git)
 
 *******************
 *******************
