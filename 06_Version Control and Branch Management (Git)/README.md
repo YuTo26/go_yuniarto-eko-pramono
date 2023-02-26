@@ -19,4 +19,3 @@ perintah - perintah pada branching
 -git add nama_file ==> untuk menambahkan nama_file
 -git commit -m "isi pesan" ==> melakukan commit dengan pesan
 -git branch -d nama_branch ==> menghapus branch
-
