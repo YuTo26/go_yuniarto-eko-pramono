@@ -3,31 +3,18 @@ package main
 import "fmt"
 
 type Car struct {
-	Type       string
-	FuelInTank float64
+	Type   string
+	FuelIn float64 // bahan bakar dalam liter
 }
 
+// https://pastebin.com/VzAK5VLf
 func (c Car) EstimateDistance() float64 {
-	var distance float64
-
-	switch c.Type {
-	case "sedan":
-		distance = c.FuelInTank * 10 // 1.5L/mill, 10 mill/L
-	case "suv":
-		distance = c.FuelInTank * 8 // 1.5L/mill, 8 mill/L
-	default:
-		distance = 0.0
-	}
-
-	return distance
+	const fuelPerKm = 1.5 // bahan bakar yang dibutuhkan per kilometer
+	return c.FuelIn / fuelPerKm
 }
 
 func main() {
-	car1 := Car{Type: "sedan", FuelInTank: 1.5}
-
-	fmt.Println("Estimated distance for car1:", car1.EstimateDistance())
-
-	car2 := Car{Type: "suv", FuelInTank: 1.5}
-
-	fmt.Println("Estimated distance for car2:", car2.EstimateDistance())
+	car := Car{"Sedan", 10.5} // membuat objek Car dengan 10.5 liter bahan bakar
+	distance := car.EstimateDistance()
+	fmt.Printf("Jarak perkiraan yang bisa ditempuh oleh %s dengan %0.2f liter bahan bakar adalah %0.2f km\n", car.Type, car.FuelIn, distance)
 }
