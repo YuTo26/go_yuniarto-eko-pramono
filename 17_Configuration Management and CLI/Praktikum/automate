@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# pembuatan dir utama dengan timestamp
+dir_utama="$1_$(date +'%a_%b_%d_%H:%M:%S_%Y')"
+mkdir "$dir_utama"
+
+# pembuatan sub dir
+personal_dir="$dir_utama/about_me/personal"
+professional_dir="$dir_utama/about_me/professional"
+friends_dir="$dir_utama/my_friends"
+system_info_dir="$dir_utama/my_system_info"
+mkdir -p "$personal_dir" "$professional_dir" "$friends_dir" "$system_info_dir"
+
+# pembuatan file dengan isinya
+echo "My username: $USER" > "$system_info_dir/about_this_laptop.txt"
+echo "With host: $(uname -a)" >> "$system_info_dir/about_this_laptop.txt"
+echo "https://www.facebook.com/$2" > "$personal_dir/facebook.txt"
+echo "https://www.linkedin.com/in/$3" > "$professional_dir/linkedin.txt"
+curl -o "$friends_dir/list_of_my_friends.txt" "https://raw.githubusercontent.com/YuTo26/basic_training/main/list_of_my_friends.txt"
+ping -c 3 forcesafesearch.google.com > "$system_info_dir/internet_connection.txt"
+
+# menampilkan isi struktur dir
+tree "$dir_utama"
