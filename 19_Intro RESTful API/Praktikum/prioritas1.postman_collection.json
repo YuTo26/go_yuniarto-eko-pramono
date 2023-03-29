@@ -1,0 +1,175 @@
+{
+	"info": {
+		"_postman_id": "feec5fc7-98f0-4c34-a330-ebe0f2d10065",
+		"name": "prioritas1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26589106"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/posts/2",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/posts/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"posts",
+						"2"
+					]
+				},
+				"description": "Kode akan membuat permintaan HTTP untuk menghapus postingan dengan ID yang diberikan menggunakan paket \"net/http\" dengan bantuan http.NewRequest. Jika permintaan gagal, kode akan mengembalikan kesalahan. Jika permintaan berhasil dilakukan, kode akan memeriksa kode status respons yang diterima dari server, dan jika kode status adalah 200 OK, maka handler akan mengembalikan pesan sukses dengan kode status 200 dan pesan \"Post with ID <id_postingan> has been deleted\", dan jika bukan, handler akan mengembalikan pesan gagal dengan kode status 500 dan pesan \"Failed to delete post with ID <id_postingan>\"."
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						""
+					]
+				},
+				"description": "pada http request ini terdapat method\n- GET request pada https://jsonplaceholder.typicode.com/posts untuk mengambil daftar postingan. Permintaan ini dilakukan oleh fungsi fetchPosts() menggunakan fungsi http.Get(). Hasil dari permintaan ini berupa respons HTTP dengan kode status 200 dan daftar postingan dalam bentuk JSON.\n\n- GET request pada endpoint / dari aplikasi klien (misalnya Postman) yang mengakses server yang dijalankan oleh kode di atas. Permintaan ini akan ditangani oleh fungsi handleGetPosts() dengan menggunakan Echo framework. Jika permintaan berhasil, handler akan mengembalikan daftar postingan dalam bentuk JSON dengan kode status 200."
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/posts/3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/posts/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"posts",
+						"3"
+					]
+				},
+				"description": "http request ini menggunakan jenis permintaan HTTP GET pada endpoint /posts/:id. Permintaan ini digunakan untuk mengambil data postingan dengan ID tertentu dari JSONPlaceholder API. ID postingan yang diminta diberikan sebagai parameter pada URL dengan pola /posts/:id, di mana :id adalah parameter yang akan diisi dengan ID postingan yang diminta.\nJika terjadi kesalahan, handler akan mengirimkan respon dengan kode status dan pesan yang sesuai. Jika ID postingan tidak valid, handler akan mengirimkan respon dengan kode status 400 dan pesan \"Invalid post ID\". Jika postingan tidak ditemukan, handler akan mengirimkan respon dengan kode status 404 dan pesan \"Post not found\".\n"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/posts",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"userId\":4,\"id\":101,\"title\":\"nyoba doang sih\",\"body\":\"halo halo ,mau nyerah aja , pusing .\"}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/posts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"posts"
+					]
+				},
+				"description": "http requqest ini melakukan HTTP request untuk mengirim data melalui metode POST ke API yang tersedia.Dalam kasus ini, HTTP request yang dilakukan adalah mengirimkan data baru ke API menggunakan metode POST, dan kemudian mengembalikan data yang baru saja dibuat sebagai response."
+			},
+			"response": []
+		},
+		{
+			"name": "https://virtserver.swaggerhub.com/sepulsa/RentABook-API/1.0.0/book/5",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://virtserver.swaggerhub.com/sepulsa/RentABook-API/1.0.0/book/5",
+					"protocol": "https",
+					"host": [
+						"virtserver",
+						"swaggerhub",
+						"com"
+					],
+					"path": [
+						"sepulsa",
+						"RentABook-API",
+						"1.0.0",
+						"book",
+						"5"
+					]
+				},
+				"description": "http get request"
+			},
+			"response": []
+		},
+		{
+			"name": "https://virtserver.swaggerhub.com/sepulsa/RentABook-API/1.0.0/user/4",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://virtserver.swaggerhub.com/sepulsa/RentABook-API/1.0.0/user/4",
+					"protocol": "https",
+					"host": [
+						"virtserver",
+						"swaggerhub",
+						"com"
+					],
+					"path": [
+						"sepulsa",
+						"RentABook-API",
+						"1.0.0",
+						"user",
+						"4"
+					]
+				},
+				"description": "deleted http request"
+			},
+			"response": []
+		},
+		{
+			"name": "https://virtserver.swaggerhub.com/sepulsa/RentABook-API/1.0.0/client",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://virtserver.swaggerhub.com/sepulsa/RentABook-API/1.0.0/client",
+					"protocol": "https",
+					"host": [
+						"virtserver",
+						"swaggerhub",
+						"com"
+					],
+					"path": [
+						"sepulsa",
+						"RentABook-API",
+						"1.0.0",
+						"client"
+					]
+				},
+				"description": "http request POST"
+			},
+			"response": []
+		}
+	]
+}
