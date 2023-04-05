@@ -1,0 +1,135 @@
+{
+	"info": {
+		"_postman_id": "6c5f4661-681b-44ab-a68f-502cddc23ecf",
+		"name": "section_20",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26589106"
+	},
+	"item": [
+		{
+			"name": "localhost:1010/users",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"qurotuaini\",\n    \"email\":\"qurotuaini@gmail.com\",\n    \"password\":\"qurotuaini\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:1010/users",
+					"host": [
+						"localhost"
+					],
+					"port": "1010",
+					"path": [
+						"users"
+					]
+				},
+				"description": "POST METHOD"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:1010/users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:1010/users",
+					"host": [
+						"localhost"
+					],
+					"port": "1010",
+					"path": [
+						"users"
+					]
+				},
+				"description": "GET METHOD"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:1010/users/3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:1010/users/3",
+					"host": [
+						"localhost"
+					],
+					"port": "1010",
+					"path": [
+						"users",
+						"3"
+					]
+				},
+				"description": "GET users by Id"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:1010/users/5",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"ikaputri\",\n    \"email\":\"ikaputri@gmail.com\",\n    \"password\":\"ikaputri123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:1010/users/5",
+					"host": [
+						"localhost"
+					],
+					"port": "1010",
+					"path": [
+						"users",
+						"5"
+					]
+				},
+				"description": "PUT METHOD"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:1010/users/5",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:1010/users/5",
+					"host": [
+						"localhost"
+					],
+					"port": "1010",
+					"path": [
+						"users",
+						"5"
+					]
+				},
+				"description": "DELETE METHOD"
+			},
+			"response": []
+		}
+	]
+}
