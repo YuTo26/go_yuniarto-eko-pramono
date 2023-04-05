@@ -1,0 +1,251 @@
+{
+	"info": {
+		"_postman_id": "36081903-a73f-4b8a-a4f8-6c917ac962df",
+		"name": "project_section21",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26589106"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/users",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users"
+					]
+				},
+				"description": "GET METHOD ( GET ALL USERS )"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/users/4",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/users/4",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"4"
+					]
+				},
+				"description": "GET METHOD ( GET USERS BY ID )"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/users",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"laelatulkhofifah\",\n    \"email\":\"laelatulkhof@gmail.com\",\n    \"password\":\"laelatulkhof\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/users",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users"
+					]
+				},
+				"description": "POST METHOD ( ADD NEW USER )"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/users/5",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"artoo\",\n    \"email\":\"artoooo@gmail.com\",\n    \"password\":\"indahkali\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/users/6",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"6"
+					]
+				},
+				"description": "PUT METHOD ( EDIT USERS BY ID )"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/users/7",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/users/7",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"7"
+					]
+				},
+				"description": "DELETE METHOD ( DELETE USER BY ID )"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/books",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\":\"ukti-yang-dirindukan\",\n    \"author\":\"liia\",\n    \"publisher\":\"liifatma\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/books",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"books"
+					]
+				},
+				"description": "POST METHOD ( ADD NEW BOOKS )"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/books",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/books",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"books"
+					]
+				},
+				"description": "GET METHOD ( SHOW ALL BOOKS )"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/books/3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/books/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"books",
+						"3"
+					]
+				},
+				"description": "GET METHOD ( GET USER BY ID )"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/books/4",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\":\"lonte surga\",\n    \"author\":\"pendosa\",\n    \"publisher\":\"tersesat_gak-mau-balik\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/books/4",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"books",
+						"4"
+					]
+				},
+				"description": "PUT METHOD ( EDIT BOOK BY ID )"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/books/3",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/books/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"books",
+						"3"
+					]
+				},
+				"description": "DELETE METHOD ( DELETE BOOK BY ID )"
+			},
+			"response": []
+		}
+	]
+}
