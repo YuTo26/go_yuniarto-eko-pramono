@@ -6,17 +6,17 @@ import (
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 
-	"project/models"
+	"project_1/models"
 )
 
 var DB *gorm.DB
 
 func InitDB() {
 	config := map[string]string{
-		"DB_Username": "root",
+		"DB_Username": "yuto",
 		"DB_Password": "yuni260200",
 		"DB_Port":     "3306",
-		"DB_Host":     "localhost",
+		"DB_Host":     "users.cenwmkyknvwe.us-east-1.rds.amazonaws.com",
 		"DB_Name":     "users",
 	}
 
